@@ -1,0 +1,131 @@
+<!doctype html>
+<!-- 
+  The consent.html displays the text of your IRB-approved
+  consent form.  Even if you are not required to provide
+  a consent form, it is helpful to use this form to 
+  describe what people can do if an error comes up, etc...
+
+-->
+<html>
+    <head>
+        <title>Psychology Experiment - Informed Consent Form</title>
+        <link rel=stylesheet href="/static/css/bootstrap.min.css" type="text/css">
+        <link rel=stylesheet href="/static/css/style.css" type="text/css">
+        <script type="text/javascript">
+            function onexit() {
+              self.close(); // no harm, no foul here
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container-consent">
+            <div id="consent">
+                <h1>We need your consent to proceed</h1>
+                <hr>
+                <div class="legal well">
+<!--
+<center><h3>INDIANA UNIVERSITY INFORMED CONSENT STATEMENT FOR</h3>
+
+<h2>Concepts and Perception</h2></center>
+
+<p>You are invited to participate in a research study of how what we have learned can influence how people think, act, and make decisions.  You were selected as a possible subject because you contacted our research team expressing interest in participating.  We ask that you read this form and ask any questions you may have before agreeing to be in the study. </p>
+
+<p>The study is being conducted by Dr. Robert Goldstone in the Department of Psychological and Brain Sciences.</p>
+ 
+<h2>STUDY PURPOSE</h2>
+
+<p>The purpose of this study is to better understand the ways that people see objects can change as they learn new tasks.</p>
+
+<h2>NUMBER OF PEOPLE TAKING PART IN THE STUDY:</h2>
+
+<p>If you agree to participate, you will be one of approximately 20000 subjects who will be participating in this research.</p>
+
+<h2>PROCEDURES FOR THE STUDY:</h2>
+
+<p>If you agree to be in the study, you will be presented with several straightforward tasks to complete.  These tasks will include responding with key strokes to stimuli (e.g., images, videos, words, sounds) displayed on a computer monitor and may involve learning what categories objects belong in, determining if objects are identical or related, and remembering or transferring what you learn about objects in one training task to a related task.</p>
+
+<p> The entire session should take a maximum of 120 minutes. You may only participate in the experiment once.</p>
+
+<h2>RISKS OF TAKING PART IN THE STUDY:</h2>
+
+<p>Participation in this study involves a potential risk of loss of confidentiality. </p>
+
+<h2>BENEFITS OF TAKING PART IN THE STUDY:</h2>
+
+<p>An understanding of how people change the way they see the world as they learn can help us to find more efficient methods to teach information and develop technologies that increase the speed of learning. You benefit from this experience because you learn something about how an experiment is designed and conducted, what issues are of interest to cognitive scientists, and what kinds of group behaviors emerge when individuals try to reach their goals in an environment that consists largely of other individuals</p>
+
+<h2>ALTERNATIVES TO TAKING PART IN THE STUDY:</h2>
+
+<p>An alternative to participating in the study is to choose not to participate.</p>
+
+<h2>CONFIDENTIALITY</h2>
+
+<p>Efforts will be made to keep your personal information confidential.  We cannot guarantee absolute confidentiality.  Your personal information may be disclosed if required by law. Your identity will be held in confidence in reports in which the study may be published and in databases in which results may be stored.  Organizations that may inspect and/or copy your research records for quality assurance and data analysis include groups such as the study investigator and his/her research associates, the IUB Institutional Review Board or its designees, and (as allowed by law) state or federal agencies, specifically the Office for Human Research Protections (OHRP), etc. who may want to access your research records. </p>
+
+
+
+
+<h2>PAYMENT</h2>
+
+<p>For participating in this study, you will receive a small payment of [$0.03 - $2.00].</p>
+
+<p>[You will also receive a bonus payment of up to $1.00 based on your performance in the study.]</p>
+
+<h2>CONTACTS FOR QUESTIONS OR PROBLEMS</h2>
+
+<p>For questions about the study, contact the researcher Dr. Robert Goldstone at (812) 855-4853.  </p>
+
+<p>For questions about your rights as a research participant or to discuss problems, complaints or concerns about a research study, or to obtain information, or offer input, contact the IU Human Subjects Office at (812) 856-4242 or by email at irb@iu.edu </p>
+
+<h2>VOLUNTARY NATURE OF STUDY</h2>
+
+<p>Taking part in this study is voluntary.  You may choose not to take part or may leave the study at any time.  Leaving the study will not result in any penalty or loss of benefits to which you are entitled and you will be compensated for your time up to that point.  Your decision whether or not to participate in this study will not affect your current or future relations with the investigator(s).</p>
+
+<h2>SUBJECT’S CONSENT</h2>
+
+<p>By checking below, you acknowledge that you have read and understand the above information, the you are 18 years of age or older, and give your consent to participate in our internet-based study.</p>
+
+<p>Thank you for agreeing to participate in our research.  Before you begin, please note that the data you provide may be collected and used by Amazon as per its privacy agreement.  Additionally, this research is for residents of the United States over the age of 18*; if you are not a resident of the United States and/or under the age of 18, please do not complete this survey.</p>
+!-->
+<!--
+[] I agree to take part in this study.
+
+Print this page if you want a copy for your records.
+
+Form date: February 6, 2015
+
+!-->
+                    <p>
+                    You have been invited to take part in a research study named BLAH BLAH
+                    </p>
+                    <p>
+                    Put your consent form here.  If you are a worker and are viewing this
+                    please decline the HIT.  This requester doesn't know what they are doing.
+                    </p>
+
+                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
+                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
+                    </button>
+                </div>
+
+                <hr>
+                <h4>Do you understand and consent to these terms?</h4>
+                <br>
+
+                <center>
+                    <button type="button" class="btn btn-primary btn-lg" onClick="window.location='/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}'">
+                    <span class="glyphicon glyphicon-ok"></span> I agree 
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-danger btn-lg" onClick="onexit()">
+                    <span class="glyphicon glyphicon-ban-circle"></span> No thanks, I do not want to do this HIT
+                    </button>
+                </center>
+
+            </div>
+        </div>
+    </body>
+</html>
+

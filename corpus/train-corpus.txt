@@ -1,0 +1,96 @@
+1
+The bird flew too close to Tara, so it swerved.
+Who swerved?
+The Bird
+Tara
+1
+The bird flew too close to Tara, so she ducked.
+Who ducked?
+Tara
+The Bird
+1
+
+2
+The children played with their games until they got tired of them.
+Who got tired of the games?
+The children
+The games
+1
+The children played with their games until they got tired of them.
+What did the children get tired of?
+The games
+The children
+1
+
+3
+John went to bed because he was tired and it looked comfortable.
+What looked comfortable?
+The bed
+John
+1
+John went to bed because he was tired and it looked comfortable.
+Who was tired?
+John
+The bed
+1
+
+4
+The toys were scattered across the floor. It was almost completely covered.
+What was covered?
+The floor
+The toys
+1
+The toys were scattered across the floor. It was almost completely covered.
+What was covered?
+The floor
+The toys
+1
+
+5
+The predator stalked the prey. It didn't escape.
+What didn't escape?
+The prey
+The predator
+1
+The predator stalked the prey. It didn't escape.
+What didn't escape?
+The prey
+The predator
+1
+
+6
+The drivers in several cars honked at the jaywalkers because they were mad at them.
+Who were mad?
+The drivers
+The jaywalkers
+1
+The drivers in several cars honked at the jaywalkers because they were mad at them.
+Who were people mad at?
+The jaywalkers
+The drivers
+1
+
+7
+Barry gave his jacket to Shawn because he was very cold.
+Who was cold?
+Shawn
+Barry
+1
+Barry gave his jacket to Shawn because he was very warm.
+Who was warm?
+Barry
+Shawn
+1
+
+8
+Sandy's room is filled with books in bookshelves. They are her favorites.
+Which are her favorites?
+The books
+The bookshelves
+1
+Sandy's room is filled with books in bookshelves. They are anchored to the wall.
+Which are anchored to the wall?
+The bookshelves
+The books
+1
+

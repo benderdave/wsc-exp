@@ -1,0 +1,394 @@
+total: 98
+
+44: 0.86
+  0.86 Bob was playing cards with Adam and was way ahead. If Adam hadn't had a sudden run of good luck, he would have won. Who would have won? Bob
+  0.87 Bob was playing cards with Adam and was way ahead. If Adam hadn't had a sudden run of good luck, he would have lost. Who would have lost? Adam
+
+45: 0.86
+  0.88 Adam can't leave work here until Bob arrives to replace him. If Bob had left home for work on time, he would be here by this time. Who would be here? Bob
+  0.86 Adam can't leave work here until Bob arrives to replace him. If Bob had left home for work on time, he would be gone by this time. Who would be gone? Adam
+
+59: 0.86
+  1.0 Bob collapsed on the sidewalk. Soon he saw Carl coming to help. He was  very ill. Who was ill? Bob
+  0.86 Bob collapsed on the sidewalk. Soon he saw Carl coming to help. He was  very concerned. Who was concerned? Carl
+
+3: 0.86
+  0.96 Joan made sure to thank Susan for all the help she had given. Who had given help? Susan
+  0.86 Joan made sure to thank Susan for all the help she had received. Who had received help? Joan
+
+106: 0.86
+  0.98 Steve follows Fred's example in everything. He admires him hugely. Who admires whom? Steve admires Fred
+  0.86 Steve follows Fred's example in everything. He influences him hugely. Who influences whom? Fred influences Steve
+
+119: 0.87
+  1.0 Tom said "Check" to Ralph as he took his bishop. Whose bishop did Tom take? Ralph's
+  0.87 Tom said "Check" to Ralph as he moved his bishop. Whose bishop did Tom move? Tom's
+
+72: 0.88
+  0.88 The path to the lake was blocked, so we couldn't reach it. What couldn't we reach? The lake
+  0.92 The path to the lake was blocked, so we couldn't use it. What couldn't we use? The path
+
+38: 0.88
+  0.88 Ann asked Mary what time the library closes, but she had forgotten. Who had forgotten? Mary
+  0.94 Ann asked Mary what time the library closes, because she had forgotten. Who had forgotten? Ann
+
+101: 0.88
+  0.88 When the sponsors of the bill got to the town hall, they were surprised to find that the room was full of opponents. They were very much in the majority. Who were in the majority? The opponents
+  0.94 When the sponsors of the bill got to the town hall, they were surprised to find that the room was full of opponents. They were very much in the minority. Who were in the minority? The sponsors
+
+87: 0.88
+  0.88 Fred was supposed to run the dishwasher, but he put it off, because he wanted to watch TV. But the show turned out to be boring, so he changed his mind and turned it on. What did Fred turn on? The dishwasher
+  0.96 Fred was supposed to run the dishwasher, but he put it off, because he wanted to watch TV. But the show turned out to be boring, so he changed his mind and turned it off. What did Fred turn off? The television
+
+30: 0.88
+  0.98 The painting in Mark's living room shows an oak tree. It is to the right of the bookcase. What is to the right of the bookcase? The painting
+  0.88 The painting in Mark's living room shows an oak tree. It is to the right of a house. What is to the right of a house? The tree
+
+108: 0.88
+  0.88 Grace was happy to trade me her sweater for my jacket. She thinks it looks great on her. What looks great on Grace? The jacket
+  0.88 Grace was happy to trade me her sweater for my jacket. She thinks it looks dowdy on her. What looks dowdy on Grace? The sweater
+
+27: 0.88
+  0.88 Susan knew that Ann's son had been in a car accident, so she told her about it. Who told the other about the accident? Susan
+  0.9 Susan knew that Ann's son had been in a car accident, because she told her about it. Who told the other about the accident? Ann
+
+103: 0.88
+  0.9 We had hoped to place copies of our newsletter on all the chairs in the auditorium, but there were simply too many of them. There are too many of what? Chairs
+  0.88 We had hoped to place copies of our newsletter on all the chairs in the auditorium, but there were simply not enough of them. There are not enough of what? Copies of the newsletter
+
+139: 0.88
+  1.0 James asked Robert for a favor but he refused. Who refused? Robert
+  0.88 James asked Robert for a favor but he was refused. Who was refused? James
+
+11: 0.9
+  0.92 Tom threw his schoolbag down to Ray after he reached the top of the stairs. Who reached the top of the stairs? Tom
+  0.9 Tom threw his schoolbag down to Ray after he reached the bottom of the stairs. Who reached the bottom of the stairs? Ray
+
+90: 0.9
+  0.94 In July, Kamtchatka declared war on Yakutsk. Since Yakutsk's army was much better equipped and ten times larger, they were victorious within weeks. Who was victorious? Yakutsk
+  0.9 In July, Kamtchatka declared war on Yakutsk. Since Yakutsk's army was much better equipped and ten times larger, they were defeated within weeks. Who was defeated? Kamchatka
+
+93: 0.9
+  0.98 Look! There is a shark swimming right below that duck! It had better get away to safety fast! What needs to get away to safety? The duck
+  0.9 Look! There is a minnow swimming right below that duck! It had better get away to safety fast! What needs to get away to safety? The minnow
+
+125: 0.9
+  0.9 Patting her back, the woman smiled at the girl. Whose back did the woman pat? The girl's
+  0.92 Stretching her back, the woman smiled at the girl. Whose back did the woman stretch? The woman's
+
+48: 0.9
+  0.9 The cat was lying by the mouse hole waiting for the mouse, but it was too cautious. What was too cautious? The mouse
+  0.98 The cat was lying by the mouse hole waiting for the mouse, but it was too impatient. What was too impatient? The cat
+
+74: 0.9
+  0.9 We went to the lake, because a shark had been seen at the ocean beach, so it was a dangerous place to swim. Which was a dangerous place to swim? The beach
+  1.0 We went to the lake, because a shark had been seen at the ocean beach, so it was a safer place to swim. Which was a safer place to swim? The lake
+
+46: 0.9
+  0.96 If the con artist has succeeded in fooling Sam, he would have gotten a lot of money. Who would have gotten the money? The con artist
+  0.9 If the con artist has succeeded in fooling Sam, he would have lost a lot of money. Who would have lost the money? Sam
+
+25: 0.9
+  0.98 Susan knows all about Ann's personal problems because she is nosy. Who is nosy? Susan
+  0.9 Susan knows all about Ann's personal problems because she is indiscreet. Who is indiscreet? Anne
+
+96: 0.9
+  0.98 The scientists are studying three species of fish that have recently been found living in the Indian Ocean. They appeared two years ago. Who or what appeared two years ago? The fish
+  0.9 The scientists are studying three species of fish that have recently been found living in the Indian Ocean. They began two years ago. Who or what began two years ago? The scientists
+
+56: 0.9
+  0.96 The customer walked into the bank and stabbed one of the tellers. He was immediately taken to the emergency room. Who was taken to the emergency room? The teller
+  0.9 The customer walked into the bank and stabbed one of the tellers. He was immediately taken to the police station. Who was taken to the police station? The customer
+
+137: 0.9
+  1.0 Jane gave Joan candy because she was hungry. Who was hungry? Joan
+  0.9 Jane gave Joan candy because she wasn't hungry. Who wasn't hungry? Jane
+
+141: 0.92
+  0.92 Emma did not pass the ball to Janie although she was open. Who was open? Janie
+  0.96 Emma did not pass the ball to Janie although she saw that she was open. Who saw that the other player was open? Emma
+
+37: 0.92
+  0.92 I used an old rag to clean the knife, and then I put it in the drawer. What did I put in the drawer? The knife
+  0.96 I used an old rag to clean the knife, and then I put it in the trash. What did I put in the trash? The rag
+
+99: 0.92
+  0.92 I put the cake away in the refrigerator. It has a lot of butter in it. What has a lot of butter? The cake
+  0.96 I put the cake away in the refrigerator. It has a lot of leftovers in it. What has a lot of leftovers? The refrigerator
+
+134: 0.92
+  0.92 Dan had to stop Bill from toying with the injured bird. He is very compassionate. Who is compassionate? Dan
+  0.96 Dan had to stop Bill from toying with the injured bird. He is very cruel. Who is cruel? Bill
+
+2: 0.92
+  0.92 The trophy doesn't fit into the brown suitcase because it's too small. What is too small? The suitcase
+  1.0 The trophy doesn't fit into the brown suitcase because it's too large. What is too large? The trophy
+
+49: 0.92
+  0.92 Anne gave birth to a daughter last month. She is a very charming woman. Who is a very charming woman? Anne
+  1.0 Anne gave birth to a daughter last month. She is a very charming baby. Who is a very charming baby? Anne's daughter
+
+122: 0.92
+  0.98 Bill passed the half-empty plate to John because he was full. Who was full? Bill
+  0.92 Bill passed the half-empty plate to John because he was hungry. Who was hungry? John
+
+58: 0.92
+  0.98 John was jogging through the park when he saw a man juggling watermelons. He was very impressed. Who was impressed? John
+  0.92 John was jogging through the park when he saw a man juggling watermelons. He was very impressive. Who was impressive? The juggler
+
+140: 0.92
+  0.92 Kirilov ceded the presidency to Shatov because he was more popular. Who was more popular? Shatov
+  0.94 Kirilov ceded the presidency to Shatov because he was less popular. Who was less popular? Kirilov
+
+111: 0.92
+  0.92 John promised Bill to leave, so an hour later he left. Who left? John
+  0.96 John ordered Bill to leave, so an hour later he left. Who left? Bill
+
+80: 0.92
+  0.92 Tom's daughter Eva is engaged to Dr. Stewart, who is his partner. The two doctors have known one another for ten years. Which two people have known one another for ten years? Tom and Dr. Stewart
+  0.96 Tom's daughter Eva is engaged to Dr. Stewart, who is his partner. The two lovers have known one another for ten years. Which two people have known one another for ten years? Eva and Dr. Stewart
+
+97: 0.92
+  0.92 The journalists interviewed the stars of the new movie. They were very cooperative, so the interview lasted for a long time. Who was cooperative? The stars
+  0.96 The journalists interviewed the stars of the new movie. They were very persistent, so the interview lasted for a long time. Who was persistent? The journalists
+
+1: 0.92
+  0.92 The city councilmen refused the demonstrators a permit because they feared violence. Who feared violence? The city councilmen
+  0.98 The city councilmen refused the demonstrators a permit because they advocated violence. Who advocated violence? The demonstrators
+
+24: 0.92
+  0.92 I poured water from the bottle into the cup until it was full. What was full? The cup
+  0.98 I poured water from the bottle into the cup until it was empty. What was empty? The bottle
+
+73: 0.92
+  0.94 The sun was covered by a thick cloud all morning, but luckily, by the time the picnic started, it was gone. What was gone? The cloud
+  0.92 The sun was covered by a thick cloud all morning, but luckily, by the time the picnic started, it was out. What was out? The sun
+
+126: 0.92
+  0.94 Billy cried because Toby wouldn't share his toy. Who owned the toy? Toby
+  0.92 Billy cried because Toby wouldn't accept his toy. Who owned the toy? Billy
+
+95: 0.92
+  0.96 Archaeologists have concluded that humans lived in Laputa 20,000 years ago. They hunted for deer on the river banks. Who hunted for deer? The prehistoric humans
+  0.92 Archaeologists have concluded that humans lived in Laputa 20,000 years ago. They hunted for evidence on the river banks. Who hunted for evidence? The archaeologists
+
+21: 0.92
+  0.96 I was trying to balance the bottle upside down on the table, but I couldn't do it because it was so top-heavy. What was top-heavy? The bottle
+  0.92 I was trying to balance the bottle upside down on the table, but I couldn't do it because it was so uneven. What was uneven? The table
+
+81: 0.92
+  0.98 I can't cut that tree down with that axe; it is too thick. What is too thick? The tree
+  0.92 I can't cut that tree down with that axe; it is too small. What is too small? The axe
+
+133: 0.92
+  1.0 Dr. Adams informed Kate that she had cancer and presented several options for future treatment. Who had cancer? Kate
+  0.92 Dr. Adams informed Kate that she had retired and presented several options for future treatment. Who had retired? Dr. Adams
+
+143: 0.92
+  1.0 I put the heavy book on the table and it broke. What broke? The table
+  0.92 I put the butterfly wing on the table and it broke. What broke? The butterfly wing
+
+115: 0.93
+  0.93 Joe paid the detective after he received the final report on the case. Who received the final report? Joe
+  0.98 Joe paid the detective after he delivered the final report on the case. Who delivered the final report? The detective
+
+76: 0.94
+  0.94 Mary tucked her daughter Anne into bed, so that she could sleep. Who is going to sleep? Anne
+  1.0 Mary tucked her daughter Anne into bed, so that she could work. Who is going to work? Mary
+
+65: 0.94
+  0.94 Sam pulled up a chair to the piano, but it was broken, so he had to stand instead. What was broken? The chair
+  0.94 Sam pulled up a chair to the piano, but it was broken, so he had to sing instead. What was broken? The piano
+
+69: 0.94
+  0.98 Jane knocked on Susan's door, but there was no answer. She was out. Who was out? Susan
+  0.94 Jane knocked on Susan's door, but there was no answer. She was disappointed. Who was disappointed? Jane
+
+18: 0.94
+  1.0 Jim yelled at Kevin because he was so upset. Who was upset? Jim
+  0.94 Jim comforted Kevin because he was so upset. Who was upset? Kevin
+
+61: 0.94
+  0.94 Mark told Pete many lies about himself, which Pete included in his book. He should have been more truthful. Who should have been more truthful? Mark
+  0.94 Mark told Pete many lies about himself, which Pete included in his book. He should have been more skeptical. Who should have been more skeptical? Pete
+
+43: 0.94
+  0.94 Bob paid for Charlie's college education, but now Charlie acts as though it never happened. He is very hurt. Who is hurt? Bob
+  0.96 Bob paid for Charlie's college education, but now Charlie acts as though it never happened. He is very ungrateful. Who is ungrateful? Charlie
+
+124: 0.94
+  0.94 The man lifted the boy onto his bunk bed. Whose bunk bed? The boy's
+  0.96 The man lifted the boy onto his shoulders. Whose shoulders? The man's
+
+66: 0.94
+  0.94 Since it was raining, I carried the newspaper over my backpack to keep it dry. What was I trying to keep dry? The backpack
+  0.98 Since it was raining, I carried the newspaper in my backpack to keep it dry. What was I trying to keep dry? The newspaper
+
+55: 0.94
+  0.94 In the storm, the tree fell down and crashed through the roof of my house. Now, I have to get it removed. What has to be removed? The tree
+  1.0 In the storm, the tree fell down and crashed through the roof of my house. Now, I have to get it repaired. What has to be repaired? The roof
+
+114: 0.94
+  1.0 Jane knocked on Susan's door but she did not answer. Who did not answer? Susan
+  0.94 Jane knocked on Susan's door but she did not get an answer. Who did not get an answer? Jane
+
+116: 0.94
+  0.94 Beth didn't get angry with Sally, who had cut her off, because she stopped and counted to ten. Who counted to ten? Beth
+  0.96 Beth didn't get angry with Sally, who had cut her off, because she stopped and apologized. Who apologized? Sally
+
+77: 0.94
+  0.94 Fred and Alice had very warm down coats, but they were not enough for the cold in Alaska. Who or what were not enough for the cold? The coats
+  0.98 Fred and Alice had very warm down coats, but they were not prepared for the cold in Alaska. Who or what were not prepared for the cold? Fred and Alice
+
+63: 0.96
+  0.96 Many people start to read Paul's books and can't put them down. They are gripped because Paul writes so well. Who or what are gripped? The readers
+  1.0 Many people start to read Paul's books and can't put them down. They are popular because Paul writes so well. Who or what are popular? The books
+
+105: 0.96
+  0.96 I couldn't find a spoon, so I tried using a pen to stir my coffee. But that turned out to be a bad idea, because it got full of ink. What got full of ink? The coffee
+  1.0 I couldn't find a spoon, so I tried using a pen to stir my coffee. But that turned out to be a bad idea, because it got full of coffee. What got full of coffee? The pen
+
+39: 0.96
+  0.96 I took the water bottle out of the backpack so that it would be lighter. What would be lighter? The backpack
+  1.0 I took the water bottle out of the backpack so that it would be handy. What would be handy? The bottle
+
+85: 0.96
+  0.96 The actress used to be named Terpsichore, but she changed it to Tina a few years ago, because she figured it was easier to pronounce. Which name was easier to pronounce? Tina
+  1.0 The actress used to be named Terpsichore, but she changed it to Tina a few years ago, because she figured it was too hard to pronounce. Which name was too hard to pronounce? Terpsichore
+
+12: 0.96
+  0.96 Although they ran at about the same speed, Sue beat Sally because she had such a good start. Who had a good start? Sue
+  0.96 Although they ran at about the same speed, Sue beat Sally because she had such a bad start. Who had a bad start? Sally
+
+47: 0.96
+  0.98 It was a summer afternoon, and the dog was sitting in the middle of the lawn. After a while, it got up and moved to a spot under the tree, because it was hot. What was hot? The dog
+  0.96 It was a summer afternoon, and the dog was sitting in the middle of the lawn. After a while, it got up and moved to a spot under the tree, because it was cooler. What was cooler? The spot under the tree
+
+42: 0.96
+  0.98 Bob paid for Charlie's college education. He is very generous. Who is generous? Bob
+  0.96 Bob paid for Charlie's college education. He is very grateful. Who is grateful? Charlie
+
+32: 0.96
+  1.0 The drain is clogged with hair. It has to be cleaned. What has to be cleaned? The drain
+  0.96 The drain is clogged with hair. It has to be removed. What has to be removed? The hair
+
+34: 0.96
+  0.96 There is a pillar between me and the stage, and I can't see it. What can't I see? The stage
+  0.96 There is a pillar between me and the stage, and I can't see around it. What can't I see around? The pillar
+
+102: 0.96
+  0.96 Everyone really loved the oatmeal cookies; only a few people liked the chocolate chip cookies. Next time, we should make more of them. Which cookie should we make more of, next time? The oatmeal cookies
+  0.96 Everyone really loved the oatmeal cookies; only a few people liked the chocolate chip cookies. Next time, we should make fewer of them. Which cookie should we make fewer of, next time? The chocolate chip
+
+60: 0.96
+  0.96 Sam and Amy are passionately in love, but Amy's parents are unhappy about it, because they are snobs. Who are snobs? Amy's parents
+  1.0 Sam and Amy are passionately in love, but Amy's parents are unhappy about it, because they are fifteen. Who are fifteen? Sam and Amy
+
+82: 0.96
+  0.96 The foxes are getting in at night and attacking the chickens. I shall have to guard them. What do I have to guard? The chickens
+  1.0 The foxes are getting in at night and attacking the chickens. I shall have to kill them. What do I have to kill? The foxes
+
+16: 0.96
+  0.96 The firemen arrived after the police because they were coming from so far away. Who came from far away? The firemen
+  0.96 The firemen arrived before the police because they were coming from so far away. Who came from far away? The police
+
+22: 0.96
+  0.96 I spread the cloth on the table in order to protect it. To protect what? The table
+  0.96 I spread the cloth on the table in order to display it. To display what? The cloth
+
+129: 0.96
+  0.96 As Ollie carried Tommy up the long winding steps, his legs dangled. Whose legs dangled? Tommy
+  0.96 As Ollie carried Tommy up the long winding steps, his legs ached. Whose legs ached? Ollie
+
+52: 0.96
+  0.98 The fish ate the worm. It was tasty. What was tasty? The worm
+  0.96 The fish ate the worm. It was hungry. What was hungry? The fish
+
+62: 0.96
+  1.0 Joe has sold his house and bought a new one a few miles away. He will be moving out of it on Thursday. Which house will he be moving out of? The old house
+  0.96 Joe has sold his house and bought a new one a few miles away. He will be moving into it on Thursday. Which house will he be moving into? The new house
+
+123: 0.96
+  1.0 Bill passed the gameboy to John because his turn was over. Whose turn was over? Bill
+  0.96 Bill passed the gameboy to John because his turn was next. Whose turn was next? John
+
+71: 0.98
+  0.98 Sam took French classes from Adam, because he was eager to speak it fluently. Who was eager to speak French fluently? Sam
+  0.98 Sam took French classes from Adam, because he was known to speak it fluently. Who was known to speak French fluently? Adam
+
+107: 0.98
+  0.98 The table won't fit through the doorway because it is too wide. What is too wide? The table
+  0.98 The table won't fit through the doorway because it is too narrow. What is too narrow? The doorway
+
+83: 0.98
+  0.98 The foxes are getting in at night and attacking the chickens. They have gotten very bold. What has gotten bold? The foxes
+  1.0 The foxes are getting in at night and attacking the chickens. They have gotten very nervous. What has gotten nervous? The chickens
+
+104: 0.98
+  0.98 I stuck a pin through a carrot. When I pulled the pin out, it left a hole. What left a hole? The pin
+  1.0 I stuck a pin through a carrot. When I pulled the pin out, it had a hole. What had a hole? The carrot
+
+57: 0.98
+  1.0 John was doing research in the library when he heard a man humming and whistling. He was very annoyed. Who was annoyed? John
+  0.98 John was doing research in the library when he heard a man humming and whistling. He was very annoying. Who was annoying? The hummer
+
+91: 0.98
+  1.0 Elizabeth moved her company from Sparta to Troy to save money on taxes; the taxes are much higher there. Where are the taxes higher? In Sparta
+  0.98 Elizabeth moved her company from Sparta to Troy to save money on taxes; the taxes are much lower there. Where are the taxes lower? In Troy
+
+98: 0.98
+  0.98 The police arrested all of the gang members. They were trying to run the drug trade in the neighborhood. Who was trying to run the drug trade? The gang
+  0.98 The police arrested all of the gang members. They were trying to stop the drug trade in the neighborhood. Who was trying to stop the drug trade? The police
+
+131: 0.98
+  0.98 The woman held the girl against her chest. Whose chest? The woman's
+  0.98 The woman held the girl against her will. Whose will? The girl's
+
+4: 0.98
+  0.98 Paul tried to call George on the phone, but he wasn't successful. Who was not successful? Paul
+  1.0 Paul tried to call George on the phone, but he wasn't available. Who was not available? George
+
+6: 0.98
+  0.98 The delivery truck zoomed by the school bus because it was going so fast. What was going so fast? The truck
+  1.0 The delivery truck zoomed by the school bus because it was going so slow. What was going so slow? The bus
+
+54: 0.98
+  0.98 The dog chased the cat, which ran up a tree. It waited at the top. Which waited at the top? The cat
+  1.0 The dog chased the cat, which ran up a tree. It waited at the bottom. Which waited at the bottom? The dog
+
+8: 0.98
+  1.0 The man couldn't lift his son because he was so weak. Who was weak? The man
+  0.98 The man couldn't lift his son because he was so heavy. Who was heavy? The son
+
+135: 0.98
+  1.0 George got free tickets to the play, but he gave them to Eric because he was particularly eager to see it. Who was eager to see the play? Eric
+  0.98 George got free tickets to the play, but he gave them to Eric even though he was particularly eager to see it. Who was eager to see the play? George
+
+78: 0.98
+  1.0 Thomson visited Cooper's grave in 1765. At that date he had been dead for five years. Who had been dead for five years? Cooper
+  0.98 Thomson visited Cooper's grave in 1765. At that date he had been travelling for five years. Who had been travelling for five years? Thomson
+
+86: 0.98
+  1.0 Fred watched TV while George went out to buy groceries. After an hour he got up. Who got up? Fred
+  0.98 Fred watched TV while George went out to buy groceries. After an hour he got back. Who got back? George
+
+10: 1.0
+  1.0 John couldn't see the stage with Billy in front of him because he is so short. Who is so short? John
+  1.0 John couldn't see the stage with Billy in front of him because he is so tall. Who is so tall? Billy
+
+23: 1.0
+  1.0 The older students were bullying the younger ones, so we rescued them. Whom did we rescue? The younger students
+  1.0 The older students were bullying the younger ones, so we punished them. Whom did we punish? The older students
+
+26: 1.0
+  1.0 Sid explained his theory to Mark but he couldn't convince him. Who did not convince whom? Sid did not convince Mark
+  1.0 Sid explained his theory to Mark but he couldn't understand him. Who did not understand whom? Mark did not understand Sid
+
+41: 1.0
+  1.0 I'm sure that my map will show this building; it is very famous. What is famous? The building
+  1.0 I'm sure that my map will show this building; it is very good. What is good? The map
+
+100: 1.0
+  1.0 Sam broke both his ankles and he's walking with crutches. But a month or so from now they should be better. What should be better? The ankles
+  1.0 Sam broke both his ankles and he's walking with crutches. But a month or so from now they should be unnecessary. What should be unnecessary? The crutches
+

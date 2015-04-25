@@ -1,0 +1,1865 @@
+
+<!-- saved from url=(0044)https://www.cs.nyu.edu/davise/papers/WS.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title> A Collection of Winograd Schemas </title>
+</head><body><h2> A Collection of Winograd Schemas </h2>
+
+
+<p>
+A Winograd
+schema is a pair of sentences that differ in only one or two words and
+that contain an ambiguity that is resolved in  
+opposite ways in the two sentences and requires the use of world knowledge
+and reasoning for its resolution. The schema takes its name from a
+well-known example by Terry Winograd (1972)
+</p><blockquote>
+The city councilmen refused the demonstrators a permit because
+they [feared/advocated] violence.
+</blockquote>
+If the word is ``feared'', then ``they'' presumably refers to the city council;
+if it is ``advocated'' then ``they'' presumably refers to the demonstrators.
+(An earlier paper (1971) by Winograd includes another schema, listed as #142
+below.)
+
+<p>
+In his paper, ``The Winograd Schema Challenge'' Hector
+Levesque (2011) proposes to assemble a set of such Winograd schemas that are
+</p><ul>
+<li> easily disambiguated by the human reader (ideally, so easily that the
+reader does not even notice that there is an ambiguity);
+</li><li> not solvable by simple techniques such as selectional restrictions;
+</li><li> Google-proof; that is, there is no obvious statistical test over 
+text corpora that will reliably disambiguate these correctly.
+</li></ul>
+
+<p>
+The set would then be presented as a challenge for AI programs, along the
+lines of the Turing test. The strengths of the challenge are that it is 
+clear-cut, in that the
+answer to each schema is a binary choice; vivid, in that it is obvious to
+non-experts that a program that
+fails to get the right answers clearly has serious gaps in its understanding;
+and difficult, in that it is far beyond the current state of the art.
+
+</p><p>
+This online document presents a collection of 133 Winograd schemas.
+Item (1) is the original schema due to Terry Winograd; 
+items (2) --- (19) were constructed by Hector Levesque; 
+(20) --- (109), (114), (115), (135) and (137) by Ernest Davis;
+(110)---(113) by Ray Jackendoff; (116) --- (133) by David Bender; 
+(136) from the web page 
+<a href="http://www.csi.uottawa.ca/tanka/files/complexities.html">
+Linguistic Problems and Complexities</a> by the TANKA group at U. Ottawa;
+(138) --- (140) from (Rahman and Ng, 2012), and (141) from (Lenat, 2008).
+Item (114) is adapted by Ernest Davis
+from a sentence in <em>Emma</em> by Jane Austen. 
+
+
+
+
+</p><p>
+We have made a deliberate effort to cover a wide range of world knowledge
+and a wide range of linguistic features. At the same time, many of the 
+schemas were designed in closely related pairs; these are generally
+adjacent in the schema. There did not seem to be any serious drawback
+to including pairs of closely related schemas. 
+
+</p><p>
+In some cases where we were uncertain whether the schema was Google-proof,
+we have done some experiments with searches using Google's count of result
+pages. These counts, however, are notoriously unreliable (Lapata and Keller,
+2005) so these ``experiments''
+should be taken with several grains of salt.
+
+</p><p>
+For the ease of machine reading, the text of each example is
+bracketed with the HTML tag &lt; text &gt; &lt; /text &gt;. The question is
+bracked with &lt; question &gt; &lt; /question &gt;. The answer is bracketed with
+&lt; answer &gt; &lt; /answer &gt;.  Comments are bracketed with &lt; remark  &gt;
+&lt; /remark &gt;. These tags are invisible in a browser.
+
+</p><p>
+There is also 
+<a href="https://www.cs.nyu.edu/davise/papers/OldSchemas.xml">
+an XML version of this collection,</a> in the same format that would be 
+used in an actual running of a challenge. The following differences between
+the XML collection and the collection below should be noted:
+</p><ul>
+<li> Item 113 here, which involves two concurrent
+wording changes, and is thus not
+in standard format, is omitted in the XML file.
+</li><li> Item 135 here, which involves two independent wording changes, has been
+broken into three cases in the XML file.
+</li></ul>
+Consequently, the numbering of examples after #113, is off by 1, in one 
+direction or the other.
+
+<!--
+<p>
+A number of studies of disambiguation have used similar pairs of sentences;
+several of these, though by no means all, fit within the constraints of the
+Winograd Schema Challenge. We have incldued 
+-->
+
+<p> Altaf Rahman and Vincent Ng, in their paper (2012)
+<a href="http://www.aclweb.org/anthology/D/D12/D12-1071.pdf">
+``Resolving Complex Cases of Definite Pronouns: The Winograd Schema Challenge"
+</a>
+applied a variety of corpus-based machine learning techniques to the
+problem of disambiguating twin sentences. Over a corpus of sentences
+developed by 30 undergraduate students, they achieved an overall accuracy
+of 73%. That corpus of sentences is 
+<a href="http://www.hlt.utdallas.edu/~vince/data/emnlp12/train-emnlp12.txt">
+here.</a>
+
+</p><p>
+The collection is open, and readers are invited to submit contributions,
+which will be added if the editor considers that they satisfy the constraints
+and are meaningfully different from the schemas already in the collection.
+Email submissions to davise@cs.nyu.edu.
+
+
+</p><p> For comparison,
+there is also a small <a href="https://www.cs.nyu.edu/davise/papers/WSfailed.html"> collection</a> of examples
+that, though interesting, in one way or another fail to meet the bar of
+WS schemas. To avoid confusion, these are placed on a separate page.
+
+</p><p> In our published papers, we have a more constrained definition of 
+Winograd schema that requires that the ambiguous word is a pronoun and that
+the two referents are noun phrases that occur. Some of the schemas below
+do not conform to these constraints; these are labelled "Winograd schemas
+in the broad sense". 
+
+</p><p>
+There are some <a href="https://www.cs.nyu.edu/davise/papers/WS.html#Translations"> links to translations of the schemas
+</a> at the end of this page.
+
+</p><p>
+<b>Acknowledgements:</b>Thanks to Hector Levesque, Leora Morgenstern, 
+Ray Jackendoff, David Bender, Wei Xu, Charlie Ortiz, So Tanaka, and 
+Rafal Rzepka.
+
+</p><h3> References </h3>
+(Note: the citations for some of these are in the comments to the examples, 
+below.)
+
+<p>
+Evan Ackerman, 
+<a href="http://spectrum.ieee.org/automaton/robotics/artificial-intelligence/winograd-schemas-replace-turing-test-for-defining-humanlevel-artificial-intelligence">
+Can Winograd Schemas Replace Turing Test for Defining Human-Level AI?
+</a>
+IEEE Spectrum, July 29, 2014.
+
+</p><p>
+J. Hartshorne, 
+<a href="http://dx.doi.org/10.1080/01690965.2013.796396">
+What is implicit causality?</a> <em>Language, Cognition, and
+Neuroscience,</em> 2013.
+
+</p><p>
+A. Kehler, L. Kertz, H. Rohde, and J. Elman,
+<a href="http://doi:10.1093/jos/ffm018"> 
+Coherence and Coreference Revisited,</a>
+<em>Journal of Semantics,</em> 25(1), 2008, 1-44.
+</p><p>
+M. Lapata and F. Keller, 
+<a href="http://homepages.inf.ed.ac.uk/mlap/Papers/tslp05.pdf">
+Web-based models for natural language
+processing,</a> <em> ACM Transactions on Speech and Language Processing</em>
+<b>2</b>:1, 2005.
+
+</p><p> 
+Doug Lenat, 
+<a href="http://www.aaai.org/ojs/index.php/aimagazine/article/view/2106/1996">
+The Voice of the Turtle: Whatever Happened to AI? </a>
+<em> AI Magazine, </em> 29:2, 2008, 11-22.
+</p><p>
+Hector Levesque, 
+<a href="http://commonsensereasoning.org/2011/papers/Levesque.pdf">
+The Winograd Schema Challenge,</a> <em> Commonsense-2011</em>.
+
+</p><p>
+Hector Levesque, Ernest Davis, and Leora Morgenstern,
+<a href="https://www.cs.nyu.edu/davise/papers/WSKR2012.pdf"> The Winograd Schema Challenge, </a>
+KR-2012. An expanded version of the previous item.
+
+</p><p>
+Hector Levesque, 
+<a href="http://www.cs.toronto.edu/~hector/Papers/ijcai-13-paper.pdf">
+On Our Best Behaviour,</a>
+IJCAI Research Excellence Award Presentation, 2013.
+
+</p><p>
+Gary Marcus,
+<a href="http://www.newyorker.com/online/blogs/elements/2013/08/why-cant-my-computer-understand-me.html"> 
+Why Can't My Computer Understand Me?</a>
+<em>The New Yorker</em> August 18, 2013.
+
+<!--
+<p>
+Rosemary Stevenson, "Interpreting pronouns and connectives: Interactions
+among focusing, thematic roles and coherence relations," <em> Language
+and Cognitive Processes</em> <b>15:</b>3, 2000, 225-262.
+
+<p>
+Hannah Rohde, <em>Coherence-Driven Effects in Sentence and Discourse
+Processing,</em> Ph.D. thesis in Linguistics, UC San Diego, 2008.
+-->
+</p><p>
+Altaf Rahman and Vincent Ng, 
+<a href="http://www.aclweb.org/anthology/D/D12/D12-1071.pdf">
+Resolving Complex Cases of Definite Pronouns: The Winograd Schema
+Challenge</a>
+EMNLP, 2012.
+
+
+</p><p>
+Peter Schüller,  
+<a href="http://www.peterschueller.com/winograd/kr14/">
+Tackling Winograd Schemas by Formalizing Reference Theory in Knowledge
+Graphis </a> <em> KR</em> 2014. 
+</p><p>
+Terry Winograd, 
+"Procedures as a Representation for Data in a Computer
+Program for Understanding Natural Language," Ph.D. thesis, Department
+of Mathematics, MIT, August 1970.
+Published as 
+<a href="http://dspace.mit.edu/handle/1721.1/7095">
+MIT AITR-235,</a> January 1971.
+
+</p><p>
+Terry Winograd, <em>
+<a href="http://www.sciencedirect.com/science/article/pii/0010028572900023">
+Understanding Natural Language,</a></em> 
+Academic Press, 1972.
+
+</p><h3> Winograd Schema Challenge </h3>
+There will be an 
+<a href="http://commonsensereasoning.org/winograd.html"> annual competition
+</a>
+based a Winograd Schema Challenge,
+with support from Nuance. This is one of a number of competitions 
+aimed at replacing the Turing Test.
+<h4> AAAI-2015 Workshop: Beyond the Turing Test </h4>
+<p>
+<a href="http://www.math.unipd.it/~frossi/BeyondTuring2015/">
+Workshop Web Site </a>
+</p><p>
+<a href="https://easychair.org/conferences/?conf=beyondturing2015">
+Submissions to workshop </a>
+</p><p>
+<a href="http://hplusmagazine.com/2014/07/28/19075/">
+Beyond the Turing Test: The Winograd Schema Challenge, </a>
+<em> h+ Magazine,</em> July 28, 2014.
+
+</p><pre>
+
+</pre>
+
+
+<center>
+<h3> Collection of Winograd Schemas </h3>
+</center>
+<ol>
+<p></p><p></p><li>
+<text>
+The city councilmen refused the demonstrators a permit because
+they [feared/advocated] violence.</text>
+<question> Who [feared/advocated] violence?</question>
+<br>
+<answer><b>Answers:</b> The city councilmen/the demonstrators.</answer>
+
+<p>
+<remark> <b> Comment:</b> This was the version published in (Winograd 1972).
+Winograd's earlier Ph.D. thesis (1970) has it in a slightly different
+form:
+<quote>
+"The city councilmen refused to give the women a permit for a demonstration
+because they [feared/advocated] violence".
+</quote>
+Winograd observes that finding the correct reference resolution would matter
+if one were translating the sentence into French, because of the gender of
+"they".
+
+
+</remark></p><p></p><p></p></li><li>
+<text> The trophy doesn't fit into the brown suitcase because it's
+too [small/large].</text>
+<question> What is too [small/large]? </question>
+
+<br>
+<answer> <b>Answers:</b>The suitcase/the trophy. </answer>
+
+<p></p><p></p></li><li>
+<text>Joan made sure to thank Susan for all the help she had [given/received].
+</text>
+<question> Who had [given/received] help?</question>
+
+<br>
+<answer><b>Answers:</b> Susan/Joan.</answer>
+
+<p></p><p></p></li><li>
+<text>Paul tried to call George on the phone, but he wasn't
+[successful/available]. </text>
+<question> Who was not [successful/available]?</question>
+
+<br>
+<answer><b>Answers:</b> Paul/George </answer>
+
+<p></p><p></p></li><li>
+<text>The lawyer asked the witness a question, but he was reluctant to 
+[answer/repeat] it. </text>
+<question> Who was reluctant to [answer/repeat] the question?</question> <br>
+
+<answer> <b>Answers:</b> The witness/the lawyer. </answer>
+
+<p></p><p></p></li><li>
+<text>
+The delivery truck zoomed by the school bus because it was going so 
+[fast/slow]. </text>
+<question> What was going so [fast/slow]?</question>
+
+<br>
+<answer><b> Answers:</b> The truck/the bus </answer>
+
+<p></p><p></p></li><li>
+<text>
+Frank felt [vindicated/crushed] when his longtime rival Bill revealed that
+he was the winner of the competition.</text>
+<question> Who was the winner of the competition?</question>
+
+<br>
+<answer><b>Answers:</b> Frank/Bill</answer>
+
+<p></p><p></p></li><li> 
+<text>The man couldn't lift his son because he was so [weak/heavy].</text>
+<question> Who was [weak/heavy]?</question>
+
+<br>
+<answer><b>Answers:</b> The man/the son. 
+
+<p></p><p></p></answer></li><li>
+<text>
+The large ball crashed right through the table because it was made of
+[steel/styrofoam].</text>
+<question> What was made of [steel/styrofoam]? </question>
+
+<br>
+<answer><b>Answers:</b> The ball/the table.</answer>
+
+<p></p><p></p></li><li>
+<text>
+John couldn't see the stage with Billy in front of him because he is so
+[short/tall]. </text> <question> Who is so [short/tall]?</question>
+
+<br>
+<answer><b>Answers:</b> John/Billy.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Tom threw his schoolbag down to Ray after he reached the [top/bottom] of the
+stairs. </text>
+<question> Who reached the [top/bottom] of the stairs?</question>
+
+<br><answer><b>Answers:</b> Tom/Ray.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Although they ran at about the same speed, Sue beat Sally because she had such
+a [good/bad] start. </text>
+<question> Who had a [good/bad] start?</question>
+
+<br><answer><b>Answers:</b> Sue/Sally.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+The sculpture rolled off the shelf because it wasn't [anchored/level].
+</text>
+<question> What wasn't [anchored/level]?</question>
+
+<br><answer><b>Answers:</b> The sculpture/the shelf.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Sam's drawing was hung just above Tina's and it did look much better with
+another one [below/above] it.
+</text>
+<question> Which looked better?</question>
+
+<br><answer><b>Answers:</b> Sam's drawing/Tina's drawing.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Anna did a lot [better/worse] 
+than her good friend Lucy on the test because she had
+studied so hard. </text>
+<question> Who studied hard?</question>
+
+<br><answer><b>Answers:</b> Anna/Lucy</answer>
+
+<p></p><p></p></li><li>
+<text>
+The firemen arrived [after/before] the police because they were coming from so
+far away. </text>
+<question> Who came from far away? </question>
+
+<br><answer><b>Answers:</b> The firemen/the police.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Frank was upset with Tom because the toaster he had [bought from/sold to]
+him didn't work.
+</text>
+<question> Who had [bought/sold] the toaster?</question>
+
+<br><answer><b>Answers:</b> Frank/Tom.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Jim [yelled at/comforted] Kevin because he was so upset.
+</text>
+<question> Who was upset? </question>
+
+<br><answer><b>Answers:</b> Jim/Kevin.</answer>
+
+<p></p><p></p></li><li>
+<text>
+The sack of potatoes had been placed [above/below] 
+the bag of flour, so it had to be
+moved first. </text>
+<question> What had to be moved first?</question>
+
+<br><answer><b>Answers:</b> The sack of potatoes/the bag of flour.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Pete envies Martin [because/although] he is very successful.
+</text>
+<question>Who is very successful?</question>
+
+<br><answer><b>Answers:</b> Martin/Pete.</answer>
+
+<p></p><p></p></li><li>
+<text>
+I was trying to balance the bottle upside down on the table, but I 
+couldn't do it because it was so [top-heavy/uneven].
+</text>
+<question>What was [top-heavy/uneven]?</question>
+
+<br><answer><b>Answers:</b> the bottle/the table. </answer>
+
+<p></p><p></p></li><li>
+<text>
+I spread the cloth on the table in order to [protect/display] it.
+</text>
+<question>To [protect/display] what?</question>
+
+<br><answer><b>Answers:</b> the table/the cloth.</answer>
+
+                                       
+<p></p><p></p></li><li>
+<text>
+The older students were bullying the younger ones, so we [rescued/punished] 
+them.  </text>
+<question>Whom did we [rescue/punish]?</question>
+
+<br><answer><b>Answers:</b> The younger students/the older students.</answer>
+                   
+<p></p><p></p></li><li>
+<text>
+I poured water from the bottle into the cup until it was [full/empty].
+</text>
+<question>What was [full/empty]?</question>
+
+<br><answer><b>Answers:</b> The cup/the bottle.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Susan knows all about Ann's personal problems because she is 
+[nosy/indiscreet].  </text>
+<question>Who is [nosy/indiscreet]?</question>
+
+<br><answer><b>Answers:</b> Susan/Anne.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Sid explained his theory to Mark but he couldn't [convince/understand] him.
+</text>
+<question>Who did not [convince/understand] whom?</question>
+
+<!-- <br><answer><b>Answers:</b> 
+Sid did not convince Mark/Mark did not understand Sid.</answer> !-->
+
+<br><answer><b>Answer Pair A:</b> 
+Sid did not convince Mark/Mark did not convince Sid.</answer>
+<br><answer><b>Answer Pair B:</b> 
+Mark did not understand Sid/Sid did not understand Mark.</answer>
+
+<br> <remark> <b>Comment:</b> Winograd schema in the broad sense, since the
+question asks about two pronouns. </remark>
+
+<p></p><p></p></li><li>
+<text>
+Susan knew that Ann's son had been in a car accident, [so/because] she told her 
+about it.
+</text>
+<question>Who told the other about the accident?</question>
+
+<br><answer><b>Answers:</b> Susan/Ann.</answer>
+
+<p>
+<remark><b>Comment:</b></remark> There is a large literature on "implicit
+causality" and "implicit consequentiality" biases (see, for example, 
+(Hartshorne, 2013), (Kehler et al. 2008)), in which a comprehender obtains
+a preference for the antecedent of a pronoun in a second clause based on the 
+content of the first clause and the connective, <em>before</em> seeing the
+content of the second clause. These are often associated with "so" and 
+"because". For example seeing:
+</p><blockquote>
+"Sally frightened Mary because she ..."  people interpret "she" as Sally. <br>
+"Sally loves Mary because she ..." people interpret "she" as Mary.  <br>
+"Sally frightened Mary, so she ..." people interpret "she" as Mary. <br>
+"Sally loves Mary, so she ..." people interpret "she" as Sally. <br>
+</blockquote>
+
+<p>
+If there are biases that favor the correct disambiguation in our example here,
+and if the direction of the biases can be determined purely from linguistic
+characteristics of the first clause e.g. from the use of the verb "knew",
+then this is not a valid Winograd schema, because an automated understander
+could do better than chance on this without employing world knowledge. However,
+I currently have no reason to think that this is the case.
+
+</p><p></p><p></p></li><li>
+<text>
+Joe's uncle can still beat him at tennis, even though he is 30 years
+[older/younger]. </text>
+<question>Who is [older/younger]?</question>
+
+<br><answer><b>Answers:</b>Joe's uncle/Joe.</answer>
+    
+   
+<p><remark>
+<b>Comment:</b> Note the following results of Google search (1/9/11). 
+</remark></p><pre>                          "uncle older"    14,500,000 
+                          "uncle younger"   9,630,000 
+                          "older"         357,000,000 
+                          "younger"        93,000,000
+</pre>
+Thus "uncle" is not particularly associated with "older".
+
+
+<p></p><p></p></li><li>
+<text>
+The police left the house and went into the garage, [where/after] they found 
+the murder weapon. </text>
+<question>Where did they find the murder weapon? </question>
+
+<br><answer><b>Answers:</b> In the garage/in the house.</answer>
+
+<p><remark>
+<b>Comment:</b> "after" is perhaps slightly awkward here. 
+Winograd schema in the broad sense, since there is no ambiguous pronoun.
+</remark>
+
+</p><p></p><p></p></li><li>
+<text>
+The painting in Mark's living room shows an oak tree. 
+It is to the right of [the bookcase/a house].
+</text>
+<question>What is to the right of [the bookcase/a house]?</question>
+
+<br><answer><b>Answers:</b> The painting/the tree.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+There is a gap in the wall. You can see the garden [through/behind] it.
+</text>
+<question>You can see the garden [through/behind] what?</question>
+
+<br><answer><b>Answers:</b> The gap/the wall.</answer>
+
+<p>
+</p><p><remark>
+<b>Comment.</b> The syntax of the question is strictly incorrect, but
+``[Behind/through] what can you see the garden?'' is 
+almost incomprehensible.</remark>
+
+</p><p></p><p></p></li><li>
+<text>
+The drain is clogged with hair. It has to be [cleaned/removed].
+</text>
+<question>What has to be [cleaned/removed]?</question>
+
+<br><answer><b>Answers:</b> The drain/the hair.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+My meeting started at 4:00 and I needed to catch the train at 4:30, 
+so there wasn't much time. Luckily, it was [short/delayed], so it worked out.
+</text>
+<question>What was [short/delayed]?</question>
+
+<br><answer><b>Answers:</b> The meeting/the train.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+There is a pillar between me and the stage, and I can't [see/see around]
+it.  </text>
+<question>What can't I  [see/see around]?</question>
+
+
+<br><answer><b>Answers:</b> The stage/the pillar. </answer>
+
+<p></p><p></p></li><li>
+<text>
+They broadcast an announcement, but a subway came into the 
+station and I couldn't [hear/hear over] it.
+</text>
+<question>What couldn't I [hear/hear over]?</question>
+
+<br><answer><b>Answers:</b> The announcement/the subway.</answer>
+
+<!--
+<p><p><LI>
+<text>
+I put my prescription for the medicine down somewhere, and now I can't 
+[find/get] it.
+</text>
+<question>What can't I [find/get]?</question>
+
+<br><answer><b>Answers:</b> The prescription/the medicine.</answer>
+
+<p><p><remark>
+<b>Comment:</b> The answer for ``get'' is perhaps not clear-cut. 
+I have</answer>
+the strong intuition that ``prescription'' is very much dispreferred here,
+though I would have trouble explaining why, exactly.</remark>
+-->
+<p></p><p></p></li><li>
+<text>
+In the middle of the outdoor concert, the rain started falling, [and/but] it 
+continued until 10.  </text>
+<question>What continued until 10?</question>
+
+<br><answer><b>Answers:</b> The rain/the concert.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+I used an old rag to clean the knife, and then I put it in the [drawer/trash].
+</text>
+<question>What did I put in the [drawer/trash]?</question>
+
+<br><answer><b>Answers:</b> The knife/the rag.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Ann asked Mary what time the library closes, [but/because] she had forgotten.
+</text>
+<question>Who had forgotten?</question>
+
+<br><answer><b>Answers:</b>Mary/Ann.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+I took the water bottle out of the backpack so that it would be [lighter/handy].
+</text>
+<question>What would be [lighter/handy]?</question>
+
+<br><answer><b>Answers:</b> The backpack/the bottle.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+I couldn't put the pot on the shelf because it was too [high/tall].
+</text>
+<question>What was too [high/tall]?</question>
+
+<br><answer><b>Answers:</b> The shelf/the pot.</answer>
+
+<p></p><p><remark>
+<b>Comment:</b> 
+The Google query ``high pot" gives about 10 times as many pages
+as ``tall pot" (search 9/8/11)
+for reasons unconnected with the meanings in this sentence.
+</remark>
+
+</p><p></p><p></p></li><li>
+<text>
+I'm sure that my map will show this building; it is very [famous/good].
+</text>
+<question>What is [famous/good]?</question>
+
+<br><answer><b>Answers:</b> The building/the map.</answer>
+
+<p>
+</p><p><remark>
+<b>Comment:</b> ``Detailed'' would of course be a better word to describe the
+map, but it would certainly be Googlable, and probably solvable by
+selectional restriction. One might suppose that "famous building" would be
+a more frequent combination than "famous map" but Google search (5/11/2012)
+suggests the reverse:
+</remark></p><blockquote>
+"building": 2.2 billion <br>
+"famous building": 250 million <br>
+"map": 1.4 billion <br>
+"famous map": 500 million
+</blockquote>
+
+
+<p></p><p></p></li><li>
+<text>
+Bob paid for Charlie's college education. He is very [generous/grateful].
+</text>
+<question>Who is [generous/grateful]?</question>
+
+<br><answer><b>Answers:</b> Bob/Charlie.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Bob paid for Charlie's college education, but now Charlie acts as though
+it never happened. He is very [hurt/ungrateful].
+</text>
+<question>Who is [hurt/ungrateful]?</question>
+
+<br><answer><b>Answers:</b> Bob/Charlie</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Bob was playing cards with Adam and was way ahead. If Adam hadn't had a
+sudden run of good luck, he would have [won/lost].
+</text>
+<question>Who would have [won/lost]?</question>
+
+<br><answer><b>Answers:</b> Bob/Adam.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Adam can't leave work here until Bob arrives to replace him. If Bob had 
+left home for work on time, he would be [here/gone] by this time.
+</text>
+<question>Who would be [here/gone]?</question>
+
+<br><answer><b>Answers:</b> Bob/Adam</answer>
+
+    
+<p></p><p></p></li><li>
+<text>
+If the con artist has succeeded in fooling Sam, he would have [gotten/lost] a 
+lot of money.  </text>
+<question>Who would have [gotten/lost] the money?</question>
+
+<br><answer><b>Answers:</b> The con artist/Sam.</answer>
+
+<p></p><p></p></li><li>
+<text>
+It was a summer afternoon, and the dog was sitting in the middle of the
+lawn. After a while, it got up and moved to a spot under the tree, 
+because it was
+[hot/cooler].  </text>
+<question>What was [hot/cooler]?</question>
+
+<br><answer><b>Answers:</b> The dog/The spot under the tree.</answer>
+
+<p><remark>
+<b>Comment:</b> 
+An earlier version of this page omitted "to a spot" in the second sentence,
+but that was problematic. Thanks to Peter Schueller for discussion.
+</remark>
+
+
+</p><p></p><p></p></li><li>
+<text>
+The cat was lying by the mouse hole waiting for the mouse, but it was too
+[cautious/impatient].  </text>
+<question>What was too [cautious/impatient]?</question>
+
+<br><answer><b>Answers:</b> The mouse/the cat.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Anne gave birth to a daughter last month. She is a very charming 
+[woman/baby].  </text>
+<question>Who is a very charming [woman/baby]? </question>
+
+<br><answer><b>Answers:</b> Anne/Anne's daughter.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Alice tried frantically to stop her daughter from [chatting/barking] at
+the party, leaving us to wonder why she was behaving so strangely.
+</text>
+<question>Who was behaving strangely?</question>
+
+<br><answer><b>Answers:</b> Alice/Alice's daughter.</answer>
+     
+<p></p><p></p></li><li>
+<text>
+I saw Jim yelling at some guy in a military uniform with a huge red 
+beard. I don't know [who/why] he was, but he looked very unhappy.
+</text>
+<question>Who looked very unhappy?</question> <br>
+<answer><b>Answers:</b> The guy in the uniform/Jim.</answer>
+
+
+
+<p></p><p><remark>
+<b>Comment:</b> 
+If you stop the second sentence at "I don't know [who/why] he was" you
+still have the same ambiguity, but it becomes very difficult to ask the 
+question. "I don't know who <em>who</em> was?'' is perhaps best.
+Of course, either way there is a reading in
+which the two ``he'' refer to different people, but it seems to me that that's
+considerably less preferred.
+</remark>
+
+
+
+</p><p></p><p></p></li><li>
+<text>
+The fish ate the worm. It was [tasty/hungry].
+</text>
+<question>What was [tasty/hungry]?</question>
+
+<br><answer><b>Answers:</b> The worm/the fish.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+I was trying to open the lock with the key, but someone had filled the 
+keyhole with chewing gum, and I couldn't get it [in/out].
+</text>
+<question>What couldn't I get [in/out]?</question>
+
+<br><answer><b>Answers:</b> The key/the chewing gum.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+The dog chased the cat, which ran up a tree. It waited at the [top/bottom].
+</text>
+<question>Which waited at the [top/bottom]?</question>
+
+<br><answer><b>Answers:</b> The cat/the dog.</answer>
+
+
+
+<p></p><p></p></li><li> 
+<text>
+In the storm, the tree fell down and crashed through the roof of my 
+house. Now, I have to get it [removed/repaired].
+</text>
+<question>What has to be [removed/repaired]?</question>
+
+<br><answer><b>Answers:</b> The tree/the roof.</answer>
+
+<p></p><p></p></li><li>
+<text>
+The customer walked into the bank and stabbed one of the tellers. He was
+immediately taken to the [emergency room/police station].
+</text>
+<question>Who was taken to the [emergency room/police station]?</question>
+
+<br><answer><b>Answers:</b> The teller/the customer.</answer>
+
+<p></p><p></p></li><li>
+<text>
+John was doing research in the library when he heard a man humming and 
+whistling. He was very [annoyed/annoying].
+</text>
+<question>Who was [annoyed/annoying]?</question>
+
+<br><answer><b>Answers:</b>John/the hummer.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+John was jogging through the park when he saw a man juggling watermelons.
+He was very [impressed/impressive].
+</text>
+<question>Who was [impressed/impressive]?</question>
+
+<br><answer><b>Answers:</b> John/the juggler.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Bob collapsed on the sidewalk. Soon he saw Carl coming to help. He was   
+very [ill/concerned].
+</text>
+<question>Who was [ill/concerned]?</question>
+
+<br><answer><b>Answers:</b> Bob/Carl.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Sam and Amy are passionately in love, but Amy's parents are unhappy
+about it, because they are [snobs/fifteen].
+</text>
+<question>Who are [snobs/fifteen]?</question>
+
+<br><answer><b>Answers:</b> Amy's parents/Sam and Amy.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Mark told Pete many lies about himself, which Pete included in his book. 
+He should have been more  [truthful/skeptical].
+</text>
+<question>Who should have been more [truthful/skeptical]?</question>
+
+<br><answer><b>Answers:</b> Mark/Pete.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Joe has sold his house and bought a new one a few miles away. He will
+be moving [out of/into] it on Thursday.
+</text>
+<question>Which house will he be moving [out of/into]?</question>
+
+<br><answer><b>Answers:</b> The old house/the new house.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+Many people start to read Paul's books and can't put them down. They 
+are [gripped/popular] because Paul writes so well.
+</text>
+<question>Who or what are [gripped/popular]?</question>
+   
+<br><answer><b>Answers:</b> The readers/the books.</answer>
+
+<p><remark>
+<b>Comment:</b> 
+A lot of synonyms for ``gripped" (e.g. ``fascinated") can be resolved
+by selectional restrictions. ``Gripped" cannot because it is polysemic with
+physical grasping.
+</remark>
+
+</p><p></p><p></p></li><li>
+<text>
+Mary took out her flute and played one of her favorite pieces. She
+has [loved/had] it since she was a child.
+</text>
+<question>What has Mary [loved/had] since she was a child?</question>
+
+<br><answer><b>Answers:</b> The piece/the flute. </answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Sam pulled up a chair to the piano, but it was broken, so he 
+had to [stand/sing] instead.  </text>
+<question>What was broken?</question>
+
+<br><answer><b>Answers:</b> The chair/the piano.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+Since it was raining, I carried the newspaper [over/in] my backpack to 
+keep it dry.  </text><question>What was I trying to keep dry?</question>
+
+<br><answer><b>Answers:</b> The backpack/the newspaper.</answer>
+
+<p><remark>
+<b>Comment:</b> 
+The form of the question is quite far from the text, but there
+doesn't seem to be a better way to formulate this question. 
+</remark>
+
+</p><p></p><p></p></li><li>
+<text>
+Sara borrowed the book from the library because she needs it for an
+article she is working on. She [reads/writes] it when she gets home from work.
+</text>
+<question>What does Sara [read/write] when she gets home from work?</question>
+
+<br><answer><b>Answers:</b> The book/the article.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+This morning, Joey built a sand castle on the beach, and put a toy 
+flag in the highest tower, but this afternoon the [wind/tide] knocked it down.
+</text>
+<question>What did the [wind/tide] knock down?</question>
+
+<br><answer><b>Answers:</b> The flag/the sand castle.</answer>
+
+<p><remark>
+<b>Comment:</b> Perhaps a little overly delicate.
+</remark>
+
+
+</p><p></p><p></p></li><li>
+<text>
+Jane knocked on Susan's door, but there was no answer. She was 
+[out/disappointed].  </text>
+<question>Who was [out/disappointed]?</question>
+
+<br><answer><b>Answers:</b> Susan/Jane.</answer>
+
+<p> <remark>
+<b> Comment:</b> Note that Jane is <em> also</em> "out" (of the house or room);
+The disambiguation in this case involves issues of textual coherence. A
+simplified version is given in #115.</remark>
+
+
+</p><p></p><p></p></li><li>
+<text>
+Jane knocked on the door, and Susan answered it. She invited her to come
+[out/in].  </text>
+<question>Who invited whom?</question>
+
+<br><answer><b>Answers:</b> Jane invited Susan/Susan invited Jane.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Sam took French classes from Adam, because he was [eager/known] to 
+speak it fluently.
+</text>
+<question>Who was [eager/known] to speak French fluently?</question>
+
+<br><answer><b>Answers:</b> Sam/Adam.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+The path to the lake was blocked, so we couldn't [reach/use] it. 
+</text>
+<question>What couldn't we [reach/use]?</question>
+     
+<br><answer><b>Answers:</b>  The lake/the path.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+The sun was covered by a thick cloud all morning, but luckily, by the time
+the picnic started, it was [gone/out].
+</text>
+<question>What was [gone/out]?</question>
+
+<br><answer><b>Answers:</b> The cloud/the sun.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+We went to the lake, because a shark had been seen at the ocean beach, so 
+it was a [dangerous/safer] place to swim.
+</text>
+<question>Which was a [dangerous/safer] place to swim?</question>
+
+<br><answer><b>Answers:</b> The beach/the lake.</answer>
+
+
+<p></p><p></p></li><li>
+<name id="Shepherds">
+<text>
+Sam tried to paint a picture of shepherds with sheep, but they ended up
+looking more like [dogs/golfers].
+</text>
+<question>What looked like [dogs/golfers]?</question>
+
+<br><answer><b>Answers:</b>the sheep/the shepherds.</answer>
+<p>
+<remark><b>Comment:</b> It may be objected that this can be solved
+using the distance in the semantic hierarchy rather than reasoning
+about the actual visual appearance. Example <a href="https://www.cs.nyu.edu/davise/papers/WS.html#Lemons">137</a>
+below avoids that objection, but is perhaps more difficult for the
+human reader. In any case, a program that reasons that similar looking
+objects are apt to be close in the semantic hierarchy is, I would say,
+solving the problem in a perfectly reasonable way. A program that reasons
+ignores the "looks like" relation and just reasons, "The referent of
+an anaphora is likely to be close in a semantic hierarchy to some nearby
+word in the sentence" is not solving the problem in a reasonable way,
+and is employing a fragile heuristic that is easily broken by 
+rearranging the sentence. For example, if we reword the
+above "Sam tried to paint a picture of shepherds with sheep, 
+but they ended up looking to Wilma
+more like [dogs/golfers]" where this heuristic will in all cases look
+for a referent semantically close to "Wilma". 
+
+
+</remark></p><p></p><p></p></name></li><li>
+<text>
+Mary tucked her daughter Anne into bed, so that she could [sleep/work].
+</text>
+<question>Who is going to [sleep/work]?</question>
+
+<br><answer><b>Answers:</b> Anne/Mary.</answer>
+
+
+     
+<p></p><p></p></li><li>
+<text>
+Fred and Alice had very warm down coats, but they were not [enough/prepared]
+for the cold in Alaska.
+</text>
+<question>Who or what were not [enough/prepared] for the cold?</question>
+
+<br><answer><b>Answers:</b> The coats/Fred and Alice.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Thomson visited Cooper's grave in 1765. At that date he had been 
+[dead/travelling] for five years.
+</text>
+<question>Who had been [dead/travelling] for five years?</question>
+
+<br><answer><b>Answers:</b> Cooper/Thomson</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Jackson was greatly influenced by Arnold, though he lived two centuries
+[earlier/later].
+</text>
+<question>Who lived [earlier/later]?</question>
+
+<br><answer><b>Answers:</b> Arnold/Jackson.</answer>
+
+     
+<p></p><p></p></li><li>
+<text>
+Tom's daughter Eva is engaged to Dr. Stewart, who is his partner. 
+The two [doctors/lovers] have  known one another for ten years.
+</text>
+<question>Which two people have known one another for ten years?</question>
+
+<br><answer><b>Answers:</b> Tom and Dr. Stewart / Eva and Dr. Stewart.</answer>
+<br>
+<remark> <b> Comment: </b> Winograd schema in the broad sense, since
+there is no ambiguous pronoun. </remark>
+
+
+<p></p><p></p></li><li>
+<text>
+I can't cut that tree down with that axe; it is too [thick/small].
+</text>
+<question>What is too [thick/small]?</question>
+
+<br><answer><b>Answers:</b> The tree/the axe.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+The foxes are getting in at night and attacking the chickens. I shall have
+to [guard/kill] them.
+</text>
+<question>What do I have to [guard/kill]?</question>
+
+<br><answer><b>Answers:</b> The chickens/the foxes.</answer>
+
+<p></p><p></p></li><li>
+<text>
+The foxes are getting in at night and attacking the chickens. They have
+gotten very [bold/nervous].
+</text>
+<question>What has gotten [bold/nervous]?</question>
+
+<br><answer><b>Answers:</b> The foxes/the chickens.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Fred covered his eyes with his hands, because the wind was blowing sand
+around. He [opened/lowered] them when the wind stopped.
+</text>
+<question>What did Fred [open/lower]?</question>
+
+<br><answer><b>Answers:</b> His eyes/his hands.</answer>
+
+<p></p><p></p></li><li>
+<text>
+The actress used to be named Terpsichore, but she changed it to Tina a 
+few years ago, because she figured it was [easier/too hard] to pronounce.
+</text>
+<question>Which name was [easier/too hard] to pronounce?</question>
+
+<br><answer><b>Answers:</b> Tina/Terpsichore.</answer>
+
+<p><remark>
+<b>Comment:</b> 
+This question can be answered without seeing the text, just seeing
+the question and the choice of possible answers. I don't see that this is
+a defect, but it is certainly an anomaly.
+</remark>
+
+
+</p><p></p><p></p></li><li> 
+<text>
+Fred watched TV while George went out to buy groceries. After an hour he 
+got [up/back].  </text>
+<question>Who got [up/back]?</question>
+
+<br><answer><b>Answers:</b> Fred/George.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Fred was supposed to run the dishwasher, but he put it off,  because
+he wanted to watch TV. But the show turned out to be boring, so he
+changed his mind and turned it [on/off].
+</text>
+<question>What did Fred turn [on/off]?</question>
+
+<br><answer><b>Answers:</b> The dishwasher/the television.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Fred is the only man still alive who remembers my great-grandfather. He
+[is/was] a remarkable man.
+</text>
+<question>Who [is/was] a remarkable man?</question>
+
+<br><answer><b>Answers:</b> Fred/my great-grandfather.</answer>
+    
+
+<p></p><p></p></li><li>
+<text>
+Fred is the only man alive who still remembers my father as an infant.
+When Fred first saw my father, he was twelve [years/months] old.
+</text>
+<question>Who was twelve [years/months] old?</question>
+
+<br><answer><b>Answers:</b> Fred/my father.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+In July, Kamtchatka declared war on Yakutsk. Since Yakutsk's army was much 
+better equipped and ten times larger, they were [victorious/defeated]
+within weeks.
+</text>
+<question>Who was [victorious/defeated]?</question>
+
+<br><answer><b>Answers:</b> Yakutsk/Kamchatka.</answer>
+<br><remark><b>Comment:</b> Winograd schema in the broad sense, since
+with "defeated" there is no plural to serve as referent of "they".
+</remark>
+
+<p></p><p></p></li><li>
+<text>
+Elizabeth moved her company from Sparta to Troy to save money on 
+taxes; the taxes are much [higher/lower] there. 
+</text>
+<question>Where are the taxes [higher/lower]?</question> <br>
+
+<answer><b>Answers:</b> In Sparta/In Troy</answer>
+
+<br><remark> <b> Comment: </b> Winograd schema in the broad sense, since the
+ambiguous word is not a pronon. </remark>
+
+<p></p><p></p></li><li>
+<text>
+Esther figures that she will save shipping costs if she builds her
+factory in Springfield instead of Franklin, because [most/none]
+of her customers live there.
+
+<question>
+In which town do [most/none] of Esther's customers live?
+</question>
+<br><answer><b>Answers:</b> Springfield/Franklin.</answer>
+<br><remark> <b> Comment: </b> Winograd schema in the broad sense, since the
+ambiguous word is not a pronon. </remark>
+
+
+<p></p><p></p></text></li><li>
+<text>
+Look! There is a [shark/minnow] swimming right below that duck! It had better 
+get away to safety fast!
+
+</text>
+<question>What needs to get away to safety?</question>
+
+<br><answer><b>Answer Pair A:</b> The duck/the shark.</answer>
+<br><answer><b>Answer Pair B:</b> The minnow/the duck.</answer>
+
+<p>
+<remark><b>Comment:</b> The pair of possible answers depends on the choice
+of words, since the special and alternate words are possible referents.
+This also occurs in schema #142.
+
+
+</remark></p><p></p><p></p></li><li>
+<text>
+There are too many deer in the park, so the park service brought in a 
+small pack of wolves. The population should [increase/decrease] over the 
+next few years.  </text>
+<question>Which population will [increase/decrease]?</question>
+
+<br><answer><b>Answers:</b> The wolves/the deer.</answer>
+<br><remark> 
+<b>Comment:</b>Winograd schema in the broad sense, since there is no ambiguous
+pronoun. </remark>
+
+
+<p></p><p></p></li><li>
+<text>
+Archaeologists have concluded that humans lived in Laputa 20,000 years 
+ago. They hunted for [deer/evidence] on the river banks.
+</text>
+<question>Who hunted for [deer/evidence]?</question>
+
+<br><answer><b>Answers:</b> The prehistoric humans/the archaeologists.</answer>
+
+
+
+<p></p><p></p></li><li>
+<text>
+The scientists are studying three species of fish that have recently
+been found living in the Indian Ocean. They [appeared/began] two years ago.
+</text>
+<question>Who or what [appeared/began] two years ago?</question>
+
+<br><answer><b>Answers:</b> The fish/the scientists.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+The journalists interviewed the stars of the new movie. They were very
+[cooperative/persistent], so the interview lasted for a long time.
+</text>
+<question>Who was [cooperative/persistent]?</question> <br>
+<answer> <b>Answers:</b> The stars/the journalists</answer>
+
+      
+
+<p></p><p></p></li><li>
+<text>
+The police arrested all of the gang members. They were trying to [run/stop]
+the drug trade in the neighborhood.
+</text>
+<question>Who was trying to [run/stop] the drug trade?</question>
+
+<br><answer><b>Answers:</b> The gang/the police.</answer>
+
+<p><remark>
+<b>Comment:</b> Hopefully the reader is not too cynical.
+</remark>
+
+
+<!--
+<p><p><LI>
+<text>
+I brought the flower pot out to the garage. It is full of [dirt/tools].
+</text>
+<question>What is full of [dirt/tools]?</question>
+
+<br><answer><b>Answers:</b> The flower pot/the garage.</answer>
+-->
+
+</p><p></p><p></p></li><li>
+<text>
+I put the cake away in the refrigerator. It has a lot of [butter/leftovers]
+in it.  </text>
+<question>What has a lot of [butter/leftovers]?</question>
+
+<br><answer><b>Answers:</b> The cake/the refrigerator.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Sam broke both his ankles and he's walking with crutches. But a month
+or so from now they should be [better/unnecessary].
+</text>
+<question>What should be [better/unnecessary]?</question>
+
+<br><answer><b>Answers:</b> The ankles/the crutches.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+When the sponsors of the bill got to the town hall, they were surprised
+to find that the room was full of opponents. They were very much in the
+[majority/minority].
+</text>
+<question>Who were in the [majority/minority]?</question>
+
+<br><answer><b>Answers:</b> The opponents/the sponsors.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Everyone really loved the oatmeal cookies; only a few people liked the 
+chocolate chip cookies. Next time, we should make [more/fewer] of them.
+</text>
+<question>Which cookie should we make [more/fewer] of, next time?</question>
+
+
+<br><answer><b>Answers:</b> The oatmeal cookies/the chocolate chip. </answer>
+     
+
+<p></p><p></p></li><li>
+<text>
+We had hoped to place copies of our newsletter on all the chairs in the
+auditorium, but there were simply [too many/not enough] of them.
+</text>
+
+<question>There are [too many/not enough] of what?
+</question>
+<br><answer><b>Answers:</b> chairs/copies of the newsletter.</answer>
+     
+
+<p></p><p></p></li><li>
+<text>
+I stuck a pin through a carrot. When I pulled the pin out, it [left/had]
+a hole.  </text>
+<question>What [left/had] a hole?</question>
+
+<br><answer><b>Answers:</b> The pin/the carrot.</answer>
+     
+Note: You might think this is Googlable, but in fact, ``pin left a hole"
+finds two results and ``pin leaves a hole" finds 66, whereas ``pin has a hole" 
+has 11,800 (because of equipment pins, not sewing pins). The phrase 
+"carrot has a hole" has 2 results and "carrot left a 
+hole" has none. (8/17/10)
+
+
+<p></p><p></p></li><li>
+<text>
+I couldn't find a spoon, so I tried using a pen to stir my 
+coffee. But that turned out to be a bad idea, because it got full of
+[ink/coffee]. </text>
+<question>What got full of [ink/coffee]?</question>
+
+<br><answer><b>Answers:</b>The coffee/the pen.</answer>
+
+<p><remark>
+<b>Comment:</b> The statistical associations give the backward answer here:
+``ink'' is associated with ``pen'' and ``coffee'' is associated with 
+``coffee''. Of course, a contestant could use a backward rule here: Since
+the challenge designers have excluded examples where statistics give
+the right answer, if you find a statistical relation, guess that
+the answer runs opposite to it. But that seems very risky. 
+</remark>
+
+
+</p><p></p><p></p></li><li>
+<text>
+Steve follows Fred's example in everything. He [admires/influences] him hugely.
+</text>
+<question>Who [admires/influences] whom?</question>
+
+<br>
+<answer><b>Answer Pair A:</b> Steve admires Fred/Fred admires Steve.</answer>
+<answer><b>Answer Pair B:</b> Fred influences Steve/Steve influences Fred.</answer>
+
+<p></p><p></p></li><li>
+<text>
+The table won't fit through the doorway because it is too [wide/narrow].
+</text>
+<question>What is too [wide/narrow]?</question>
+
+<br><answer><b>Answers:</b> The table/the doorway.</answer>
+
+
+<p></p><p></p></li><li>
+<text>
+Grace was happy to trade me her sweater for my jacket. She thinks it looks
+[great/dowdy] on her.  </text>
+<question>What looks [great/dowdy] on Grace?</question>
+     
+<br><answer><b>Answers:</b> The jacket/the sweater.</answer>
+
+     
+<p></p><p></p></li><li>
+<text>
+Bill thinks that calling attention to himself was rude [to/of] Bert.
+</text>
+<question>Who called attention to himself?</question>
+
+<br><answer><b>Answers:</b> Bill/Bert.</answer>
+<br><remark><b>Comment:</b> Winograd schema in the broad sense. The essential
+issue is the subject of "calling" which is not a pronoun. </remark>
+
+<p></p><p></p></li><li>
+<text>
+John [hired/hired himself out to] Bill to take care of him.
+</text>
+<question>Who is taking care of whom?</question>
+
+<br><answer><b>Answers:</b> Bill is taking care of John/John is 
+taking care of Bill.</answer>
+<!-- <br><answer><b>Answers:</b> Bill/Bert.</answer> !-->
+<br><remark><b>Comment:</b> Winograd schema in the broad sense. The essential
+issue is the subject of "taking care" which is not a pronoun. </remark>
+
+<p></p><p></p></li><li>
+<text>
+John [promised/ordered] Bill to leave, so an hour later he left.
+</text>
+<question>Who left?</question>
+
+<br><answer><b>Answers:</b> John/Bill.</answer>
+
+<p></p><p></p></li><li>
+<text>
+Sam Goodman's biography of the Spartan general Xenophanes
+conveys a vivid sense of the difficulties he faced in his
+[childhood/research]. </text>
+<question>Who faced difficulties?</question>
+
+<br><answer><b>Answers:</b> Xenophanes/Sam.</answer>
+
+
+<p><remark>
+<b>Comment:</b> 
+It is quite possible that "biography" is correlated with "research".
+But even if that correlation is detected, there is another non-trivial
+step to realize that the research is associated with the author rather
+than the subject of the biography.
+</remark>
+
+</p><p></p><p></p></li><li>
+<text>
+Emma's mother had died long ago, and her [place had been taken/education had been managed] 
+by an excellent woman as governess.
+</text>
+<question> Whose [place had been taken/education had been managed]?
+
+<br><answer><b> Answers:</b> Emma's mother/Emma.</answer>
+
+<p><remark>
+<b>Comment:</b>
+The first version is adapted from a sentence in the second paragraph
+of Jane Austen's <em> Emma</em>. The original is
+</remark></p><blockquote>
+Her mother had died too long ago for her to have more than an indistinct
+remembrance of her caresses; and her place had been taken by an excellent
+woman as governess, who had fallen little short of a mother in affection.
+</blockquote>
+Note that the original presents two further difficult disambiguation problems,
+with the second and third "her"'s in the sentence.
+Winograd schema in the broad sense, since two separated words are replaced.
+
+
+<p> </p><p></p></question></li><li><text>
+Jane knocked on Susan's door but she did not [answer/get an answer].</text>
+<question>Who did not [answer/get an answer]?</question> <br>
+<answer> <b>Answers:</b> Susan/Jane </answer>
+
+<p><remark>
+<b> Comment:</b> 
+Simplified version of #69. Like #69, it relies on 
+textual coherence for disambiguation; it is, after all, equally true that Jane
+did not answer, and that Susan did not get an answer. </remark>
+
+</p><p> </p><p></p></li><li><text>
+Joe paid the detective after he [received/delivered] the final
+report on the case. </text>
+<question>Who [received/delivered] the final report?</question> <br>
+<answer> <b> Answers:</b> Joe/the detective. </answer>
+
+<p> </p><p></p></li><li><text>
+Beth didn't get angry with Sally, who had cut her off, because she
+stopped and [counted to ten/apologized]. </text>
+<question>Who [counted to ten/apologized]?</question> <br>
+<answer><b>Answers:</b> Beth/Sally</answer>
+
+<p></p><p></p></li><li> <text>
+Jim signaled the barman and gestured toward his [empty
+glass/bathroom key]. 
+</text>
+<question> Whose [empty glass/bathroom key]? 
+</question><br>
+<answer><b>Answers:</b> Jim/the barman. </answer>
+
+<p></p><p></p></li><li> <text>
+Dan took the rear seat while Bill claimed the front because his "Dibs!"
+was [quicker/slow].
+</text>
+<question> Whose "Dibs" was [quicker/slow]?
+</question><br>
+<answer><b>Answers:</b> Bill/Dan </answer>
+
+<p></p><p></p></li><li> <text>Tom said "Check" to Ralph as he [took/moved] his bishop.
+</text>
+<question> Whose bishop did Tom [take/move]?
+</question><br>
+<answer><b>Answers:</b> Ralph's/Tom's </answer>
+
+<p></p><p></p></li><li> <text>
+As Andrea in the crop duster passed over Susan, she could see the landing
+[strip/gear].
+</text>
+<question> Who could see the landing [strip/gear]?
+</question><br>
+<answer><b>Answers:</b> Andrea/Susan
+</answer>
+
+<p></p><p></p></li><li> <text>
+Tom gave Ralph a lift to school so he wouldn't have to [walk/drive alone].
+</text>
+<question> Who wouldn't have to [walk/drive alone]?
+</question><br>
+<answer><b>Answers:</b> Ralph/Tom </answer>
+
+<p></p><p></p></li><li> <text> Bill passed the half-empty plate to John because 
+he was [full/hungry].
+</text>
+<question> Who was [full/hungry]?
+</question><br>
+<answer><b>Answers:</b> Bill/John </answer>
+
+<p></p><p></p></li><li> <text>
+Bill passed the gameboy to John because his turn was [over/next]. 
+</text>
+<question> Whose turn was [over/next]?
+</question><br>
+<answer><b>Answers:</b> Bill/John </answer>
+
+<p></p><p></p></li><li> <text>  The man lifted the boy onto his [bunk bed/shoulders].
+</text>
+<question> Whose [bunk bed/shoulders]?
+</question><br>
+<answer><b>Answers:</b> The boy's/the man's. </answer>
+
+<p></p><p></p></li><li> <text>
+[Patting/Stretching] her back, the woman smiled at the girl.
+</text>
+<question> Whose back did the woman [pat/stretch]?
+</question><br>
+<answer><b>Answers:</b> The girl's/the woman's </answer>
+
+<p></p><p></p></li><li> <text> Billy cried because Toby wouldn't [share/accept] his toy. 
+</text>
+<question> Who owned the toy?
+</question><br>
+<answer><b>Answers:</b> Toby/Billy </answer>
+
+<p></p><p></p></li><li> <text>
+Lily spoke to Donna, breaking her [concentration/silence].
+</text>
+<question> Whose [concentration/silence]? 
+</question><br>
+<answer><b>Answers:</b> Donna/Lily </answer>
+
+<p></p><p></p></li><li> <text>
+When Tommy dropped his ice cream, Timmy giggled, so father gave him a
+[stern/sympathetic] look.
+</text>
+<question> Who got the look from father?
+</question><br>
+<answer><b>Answers:</b> Timmy/Tommy </answer>
+
+<p></p><p></p></li><li> <text>
+ As Ollie carried Tommy up the long winding steps, his legs [dangled/ached].
+</text>
+<question> Whose legs [dangled/ached]?
+</question><br>
+<answer><b>Answers:</b> Tommy/Ollie</answer>
+
+<p></p><p></p></li><li> <text>The father carried the sleeping boy in his [arms/bassinet].
+</text>
+<question> Whose [arms/bassinet]?
+</question><br>
+<answer><b>Answers:</b> The father/the boy </answer><br>
+<remark> <b>Comment:</b> The concern has been raised that there may be
+a statistical association between "sleeping boy" and "bassinet".
+
+<p></p><p></p></remark></li><li> <text> The woman held the girl against her [chest/will].
+</text>
+<question> Whose [chest/will]?
+</question><br>
+<answer><b>Answers:</b> The woman's/the girl's </answer>
+
+<p></p><p></p></li><li> <text>
+Pam's parents came home and found her having sex with her boyfriend,
+Paul. They were [embarrassed/furious] about it.
+</text>
+<question> Who were [embarrassed/furious]?
+</question><br>
+<answer><b>Answers:</b> Pam and Paul/Pam's parents.
+
+<p></p><p></p></answer></li><li> <text> Dr. Adams informed Kate that she had [cancer/retired] 
+and presented several options for future treatment. 
+</text>
+<question>  Who had [cancer/retired]?
+</question><br>
+<answer><b>Answers:</b> Kate/Dr. Adams </answer>
+
+<p></p><p></p></li><li> <text> Dan had to stop Bill from toying with the injured bird.
+ He is very [compassionate/cruel].
+</text>
+<question> Who is [compassionate/cruel]?
+</question><br>
+<answer><b>Answers:</b> Dan/Bill </answer>
+
+<p></p><p> </p></li><li> <text>George got free tickets to the play, but he gave them to Eric
+[because/even though] he was particularly eager to 
+see it.</text>
+<question> Who was eager to see the play? </question> <br>
+<answer> <b> Answers:</b> Eric/George </answer>
+
+<p></p><p> </p></li><li> <text>George got free tickets to the play, but he gave them to Eric
+[because/even though] he was not particularly eager to 
+see it.</text>
+<question> Who was not eager to see the play? </question><br>
+<answer> <b> Answers:</b> George/Eric </answer> <br>
+<remark> <b>Comment:</b> The format here is non-standard; this is a 
+cross-over,
+like a two-way light switch. I am a little doubtful about the intelligibility
+of "even though" with "not particularly", but the rest seem fine to me.
+David Bender points out that the difficulty in that case may be due to the
+fact that it is hard to find a motivation for George. Winograd schema in
+the broad sense. </remark>
+
+<p></p><p></p></li><li> <text>Jane gave Joan candy because she [was/wasn't] hungry.</text>
+<question> Who [was/wasn't] hungry?</question> <br>
+<answer> <b> Answers:</b> Joan/Jane.
+<p>
+<remark> <b>Comment:</b> From the interesting collection,
+<a href="http://www.csi.uottawa.ca/tanka/files/complexities.html">
+Linguistic Problems and Complexities </a>. Similar to the previous
+example, but more elegant wording. 
+
+</remark></p><p></p><p></p></answer></li><li> <name id="Lemons">
+<text> I tried to paint a picture of an orchard, with lemons in the
+lemon trees, but they came out looking more like [light bulbs /
+telephone poles].</text>
+<question> What looked like [light bulbs / telephone poles]? </question>
+<br>
+<answer> <b>Answers:</b> The lemons / the trees </answer>
+<p>
+<remark><b>Comment:</b>  Similar to example
+<a href="https://www.cs.nyu.edu/davise/papers/WS.html#Shepherds">75</a> above, but not solvable by
+closeness in a semantic hierarchy. However, I am not entirely confident
+how easy this disambiguation is for the human reader.
+
+</remark></p><p></p><p></p></name></li><li> 
+<text> James asked Robert for a favor but he [refused/was refused].</text>
+<question> Who [refused/was refused]? </question>
+<br>
+<answer> <b>Answers:</b> Robert/James </answer>
+
+<p></p><p></p></li><li> 
+<text> Kirilov ceded the presidency to Shatov because he was [more/less]
+popular. </text>
+<question> Who was [more/less] popular? </question> <br>
+<answer> <b> Answers:</b> Shatov/Kirilov
+<p>
+<remark> <b>Comment:</b> In (Rahman and Ng, 2012), this example is given
+with the names Medvedev and Putin. I have changed the names, because with the
+real names, one can solve the problem by Googling to see which politician
+is actually more popular.
+
+</remark></p><p> </p><p> </p></answer></li><li>
+<text> Emma did not pass the ball to Janie although she [was open/saw that she
+was open].
+</text>
+<question> Who [was open/saw that the other player was open]? </question> <br>
+<answer> <b> Answers:</b> Janie/Emma </answer>
+
+<p>
+<remark> <b> Comment:</b> Modified from example IV, table 1 in (Rahman and
+Ng, 2012). The original text is "Emma did not pass the ball to Janie although
+she [was open/should have]''; however, with ``should have'' this can be 
+disambiguated on syntactic grounds.
+
+</remark></p><p> </p></li><li> <text>Joe saw his brother skiing on TV last night but the fool didn't
+[recognize him/have a coat on].</text>
+<question> Who is the fool? </question> <br>
+<answer> <b> Answers:</b> Joe/Joe's brother.
+<br> <remark> From (Lenat 2008).
+Winograd schema in the broad sense. (The ambiguity is in the
+noun "fool", not in a pronoun.)</remark>
+
+<p> </p><p> </p></answer></li><li>
+<text> I put the [heavy book/butterfly wing] on the table and it broke. 
+</text>
+<question> What broke? </question> <br>
+
+<answer> <b>Answer Pair A:</b> The table/The book</answer>
+<answer> <b>Answer Pair B:</b> The butterfly wing/The table</answer>
+
+<p>
+<remark> <b>Comment:</b> From (Winograd, 1971). Thanks to Charlie Ortiz
+for finding this. As in schema #93, the answer pair depends on the
+choice of words.</remark>
+
+</p></li></ol>
+
+<name id="Translations">
+<h3> Multilingual Winograd Schemas </h3>
+<h4> French </h4>
+<p> </p><p> 
+<text> Les conseillers municipaux ont refusé de donner un permis aux 
+manifestants énervés parce qu'ils [avaient peur/ont 
+preconisé] de la violence.</text> 
+<question>
+Qui [avait peur/ont preconisé] de la violence?</question> <br>
+<answer> <b> Answers:</b> les conseillers municipaux/
+les manifestants énervés</answer> <br>
+<remark> <b>Comment:</b> From 
+<a href="http://www.slate.fr/life/76572/intelligence-artificielle-probleme-defaut-betise">
+Slate.fr </a></remark>
+
+</p><h4> <a href="https://www.cs.nyu.edu/davise/papers/WSChinese.html"> Chinese </a> 
+(translated by Wei Xu). </h4>
+
+<h4> Translation into Japanese </h4>
+Translated by So Tanaka and Rafal Rzepka <br>
+<b> Translation changing English names to Japanese </b>
+<a href="https://www.cs.nyu.edu/davise/papers/collection_ja.pdf"> PDF </a> &nbsp; &nbsp;
+<a href="http://arakilab.media.eng.hokudai.ac.jp/~kabura/collection_ja.html">
+HTML</a>  <br>
+<b> Translation preserving English names</b>
+<a href="https://www.cs.nyu.edu/davise/papers/collection_katakana.pdf"> PDF </a> &nbsp; &nbsp;
+<a href="http://arakilab.media.eng.hokudai.ac.jp/~kabura/collection_katakana.html">
+HTML</a>  <br>
+
+<!--
+<p> <p><LI><text>
+Ken [admired/impressed] Geoff, so he gave him the prize.
+<question> Who got the prize?</question>
+<answer> <b>Answers:</b> Geoff/Ken. 
+
+<p> <remark> <b>Comment:</b>
+From (Stevenson, 2000).
+
+<p><p><LI><text>
+Mary scolded Sue [and, what's more,/because] she kicked her.</text>
+<question> Who kicked whom?</question>
+<answer> <b> Answers:</b> Mary kicked Sue / Sue kicked Mary.
+
+
+<p><remark>
+<b> Comment:</b> 
+Slightly modified from (Rohde, 2008).
+-->
+
+
+
+
+<p>
+<small> Created 9/8/2011 by Ernest Davis. <br>
+Last update: 1/10/2015 </small>
+</p></name></body></html>

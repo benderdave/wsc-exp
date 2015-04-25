@@ -1,0 +1,204 @@
+1
+Tom told Alice he needed five more minutes to get ready.
+Who needed more time?
+Tom
+Alice
+1
+Tom told Alice he needed five more minutes to get ready.
+Who was told that more time was needed?
+Alice
+Tom
+1
+
+2
+Sean threw the football to his teammate Brian.
+Who is Sean's teammate?
+Brian
+Sean
+1
+Sean threw the football to his teammate Brian.
+Who is Sean's teammate?
+Brian
+Sean
+1
+
+3
+The roosters kept Jim up all night with their crowing, so he was tired the next morning.
+Who was crowing?
+The roosters
+Jim
+1
+The roosters kept Jim up all night with their crowing, so he was tired the next morning.
+Who was tired in the morning?
+Jim
+The roosters
+1
+
+4
+Sarah always visits her uncle Barry at his home on the first of the month. She is very consistent.
+Who is consistent?
+Sarah
+Uncle Barry
+1
+Sarah always visits her uncle Barry at his home on the first of the month. She is very consistent.
+Whose home does Sarah visit?
+Uncle Barry's
+Sarah's
+1
+
+5
+Although Pete usually found it soothing, today the grandfather clock irritated him with its endless ticking.
+What did Pete usually find soothing?
+The ticking of the clock
+Today
+1
+Although Pete usually found it soothing, today the grandfather clock irritated him with its endless ticking.
+Who was irritated?
+Pete
+The grandfather clock
+1
+
+6
+Sam broke his leg and had to walk on crutches. Using them made him miserable.
+Who was miserable?
+Sam
+The crutches
+1
+Sam broke his leg and had to walk on crutches. Using them made him miserable.
+What made Sam miserable?
+Using the crutches
+Sam's leg
+1
+
+7
+Steve always ends up going along with whatever everyone else wants because he is a pushover.
+Who is a pushover?
+Steve
+Everyone else
+1
+Steve always ends up going along with whatever everyone else wants because he is a pushover.
+Who is a pushover?
+Steve
+Everyone else
+1
+
+8
+The law was clear on the issue and Ralph knew it. He would simply have to grit his teeth and pay the fine.
+Who would have to pay?
+Ralph
+The law
+1
+The law was clear on the issue and Ralph knew it. He would simply have to grit his teeth and pay the fine.
+Who would have to pay?
+Ralph
+The law
+1
+
+9
+Dad sent the children to the other room because they were playing loudly and he needed to work.
+Who were playing loudly?
+The children
+Dad
+1
+Dad sent the children to the other room because they were playing loudly and he needed to work.
+Who needed to work?
+Dad
+The children
+1
+
+10
+Sarah finally found the article she was looking for in the filing cabinet. Dan had misfiled it under the author's name instead of the title.
+What had been misfiled?
+The article
+The filing cabinet
+1
+Sarah finally found the article she was looking for in the filing cabinet. Dan had misfiled it under the author's name instead of the title.
+Who was looking for the article?
+Sarah
+Dan
+1
+
+11
+Although she tried to stop it, Pam's tray slid off the table and crashed onto the floor.
+Who tried to stop the tray from falling?
+Pam
+The floor
+1
+Although she tried to stop it, Pam's tray slid off the table and crashed onto the floor.
+Who tried to stop the tray from falling?
+Pam
+The floor
+1
+
+12
+Robert and John are always getting into fights. They have been bitter enemies for as long as they can remember.
+Who are enemies?
+Robert and John
+The fights
+1
+Robert and John are always getting into fights. They have been bitter enemies for as long as they can remember.
+Who are enemies?
+Robert and John
+The fights
+1
+
+13
+The goalie dove for the ball but he missed it.
+Who dove?
+The goalie
+The ball
+1
+The goalie dove for the ball but he missed it.
+What was missed?
+The ball
+The goalie
+1
+
+14
+The fishermen relaxed in their rowboat, waiting for a hungry fish to come along.
+Who were in the boat?
+The fishermen
+A hungry fish
+1
+The fishermen relaxed in their rowboat, waiting for a hungry fish to come along.
+Who were in the boat?
+The fishermen
+A hungry fish
+1
+
+15
+The teacher gave the students an advanced math test. It was challenging for them.
+Who gave the test?
+The teacher
+The students
+1
+The teacher gave the students an advanced math test. It was challenging for them.
+What was challenging for the students?
+The test
+The teacher
+1
+
+16
+This morning Jim flipped a coin ten times and got heads every time! This really surprised him.
+What surprised Jim?
+Flipping heads ten times
+The morning
+1
+This morning Jim flipped a coin ten times and got heads every time! This really surprised him.
+Who was surprised?
+Jim
+The coin
+1
+
+17
+Sue was badly injured in the car accident. She had to go to the hospital.
+Who had to go to the hospital?
+Sue
+The accident
+1
+Sue was badly injured in the car accident. She had to go to the hospital.
+Who had to go to the hospital?
+Sue
+The accident
+1
+
